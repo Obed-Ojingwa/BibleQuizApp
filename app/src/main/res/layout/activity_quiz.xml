@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,8 +9,9 @@
         android:id="@+id/tvQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Question"
         android:textSize="18sp"
-        android:padding="16dp" />
+        android:layout_marginBottom="16dp" />
 
     <RadioGroup
         android:id="@+id/rgOptions"
@@ -17,9 +19,31 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" />
 
-    <Button
-        android:id="@+id/btnSubmit"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Submit" />
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+    </LinearLayout>
 </LinearLayout>
