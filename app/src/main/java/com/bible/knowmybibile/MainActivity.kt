@@ -12,6 +12,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+
         findViewById<Button>(R.id.btnEasy).setOnClickListener { startQuiz("Easy") }
         findViewById<Button>(R.id.btnMedium).setOnClickListener { startQuiz("Medium") }
         findViewById<Button>(R.id.btnHard).setOnClickListener { startQuiz("Hard") }

@@ -2,6 +2,7 @@ package com.bible.knowmybibile
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.RadioButton
 import android.widget.RadioGroup
@@ -51,6 +52,9 @@ class QuizActivity : AppCompatActivity() {
 
             findViewById<Button>(R.id.btnPrevious).isEnabled = currentQuestionIndex > 0
             findViewById<Button>(R.id.btnNext).isEnabled = currentQuestionIndex < questions.size - 1
+
+            findViewById<Button>(R.id.btnSubmit).visibility =
+                if (currentQuestionIndex == questions.size - 1) View.VISIBLE else View.GONE
         }
     }
 
